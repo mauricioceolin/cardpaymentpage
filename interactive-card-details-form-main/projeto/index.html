@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagamento</title>
+</head>
+
+<body>
+    <section class="left">
+        <img src="../images/bg-main-desktop.png">
+    </section>
+    <section class="right">
+        <form method="post" action="">
+            <div class="dados">
+                <div class="datacard">
+                    <p>Nome do titular do cartão</p>
+                    <input type="text" maxlength="30" id="cardname" placeholder="Nome do titular" oninput="mudaNomeCartao(this.value)">
+                    <p>Número do cartão</p>
+                    <input type="text" inputmode="numeric" id="cardnum" placeholder="0000 0000 0000 0000" oninput="executarFuncoes(this)">
+                </div>
+                <div class="valcvc">
+                    <div class="valcartao">
+                        <p>Val. (MM/AA)</p>
+                        <input type="number" inputmode="numeric" id="valmes" min="1" max="12"
+                            oninput="validade(this)">
+                        <input type="number" inputmode="numeric" id="valano" min="22" max="37"
+                            oninput="validade2(this)">
+                    </div>
+
+                    <div class="cvccartao">
+                        <p>CVC</p>
+                        <input type="number" inputmode="numeric" id="cvc" min="1" oninput="executarFuncoesCvc(this)">
+                    </div>
+                </div>
+                <button class="botao" type="submit" value="Enviar">Confirmar</button>
+            </div>
+        </form>
+    </section>
+    <section class="fotocartoes">
+        <img class="costas" src="../images/bg-card-back.png">
+        <img class="frente" src="../images/bg-card-front.png">
+        <img class="bandeira" src="../images/favicon-32x32.png">
+        <span class="showname" id="showname">Mauricio Ceolin</span>
+        <span class="shownumber" id="shownumber">0123 4567 8910 1112</span>
+        <span class="showval" id="showval">06/12</span>
+        <span class="showcvc" id="showcvc">7777</span>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+  @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.left img {
+    display: block;
+    max-height: 695px;
+}
+
+.right {
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin-left: 372px;
+}
+
+.dados {
+    position: relative;
+    top: 200px;
+    left: 500px;
+}
+
+.datacard p {
+    font-size: 10pt;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.datacard input {
+    width: 275px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding: 4px 4px;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+.valcvc {
+    display: flex;
+
+}
+
+.valcvc p {
+    font-size: 10pt;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+
+.valcvc input {
+    font-size: 14pt;
+    width: 50px;
+    padding: 4px 1px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    margin-right: 5px;
+}
+
+.valcartao input[type="number"]::-webkit-inner-spin-button,
+.valcartao input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.datacard input[type="number"]::-webkit-inner-spin-button,
+.datacard input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.cvccartao {
+    margin-left: 20px;
+}
+
+.cvccartao input {
+    width: 140px;
+    padding: 4px 0;
+}
+
+.cvccartao input[type="number"]::-webkit-inner-spin-button,
+.cvccartao input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.botao{
+    width: 275px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: rgb(56, 5, 103);
+    color: white;
+    padding: 5px 4px;
+    font-size: 12pt;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-color: rgba(138, 43, 226, 0.2);
+
+}
+
+section.fotocartoes {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.frente{
+    height: 200px;
+    margin-top: 160px;
+    margin-left: 150px;;
+}
+
+.costas{
+    height: 200px;
+    position: absolute;
+    margin-top: 385px;
+    margin-left: 275px;
+}
+
+
+.bandeira{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 180px;
+}
+
+
+.shownumber{
+    text-transform: uppercase;
+    color: white;
+    font-size: 16pt;
+    position: absolute;
+    margin-top: 275px;
+    margin-left: 175px;
+}
+
+.showname{
+    text-transform: uppercase;
+    color: white;
+    font-size: 10pt;
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 175px;
+}
+
+.showval{
+    text-transform: uppercase;
+    color: white;
+    font-size: 10pt;
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 445px;
+}
+
+.showcvc{
+    text-transform: uppercase;
+    color: white;
+    font-size: 10pt;
+    position: absolute;
+    margin-top: 472px;
+    margin-left: 550px;
+}
+
+@media screen and (max-width: 768px) {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+      .left img {
+      height: auto;
+      width: 100%; /* Definir a largura como 50% da largura da tela */
+      max-height: 300px; /* Definir a altura máxima desejada */
+    }
+
+    .dados{
+        display: block;
+        position: fixed;
+        top: 320px;
+        left: 40px;
+    }
+
+    .datacard input {
+        width: 300px;
+    }
+
+    .cvccartao input {
+        width: 165px;}
+
+    .botao {
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    section.fotocartoes {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .frente{
+        height: 150px;
+        margin-top: 140px;
+        margin-left: 65px;
+        z-index: 1;
+    }
+
+      .costas{
+        height: 150px;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 85px;
+        
+    }
+   
+    
+    .bandeira{
+        position: absolute;
+        margin-top: 160px;
+        margin-left: 90px;
+        height: 20px;
+        width: 20px;
+        z-index: 2;
+    }
+    
+    
+    .shownumber{
+        font-size: 16pt;
+        letter-spacing: 1px;
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 90px;
+        z-index: 2;
+    }
+    
+    .showname{
+        font-size: 10pt;
+        position: absolute;
+        margin-top: 255px;
+        margin-left: 90px;
+        z-index: 2;
+    }
+    
+    .showval{
+        font-size: 10pt;
+        position: absolute;
+        margin-top: 255px;
+        margin-left: 270px;
+        z-index: 2;
+    }
+    
+    .showcvc{
+        font-size: 10pt;
+        position: absolute;
+        margin-top: 115px;
+        margin-left: 290px;
+        z-index: 2;
+    }
+  
+}
+  
